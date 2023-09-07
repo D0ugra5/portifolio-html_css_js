@@ -1,0 +1,46 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #090a0f 50%, #17222e 100%);
+}
+
+.star {
+  z-index: 2;
+  position: absolute;
+  background: transparent;
+  animation: animStar linear infinite;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+  width: 3px;
+  height: 3px;
+  animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  animation: animStar 150s linear infinite;
+}
+
+.teste {
+  height: 300px;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
